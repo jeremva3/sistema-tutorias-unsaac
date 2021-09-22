@@ -506,10 +506,7 @@ def add_tutor_estudiante_save(request):
 
         
         staff_id = request.POST.get('staff')
-        staff = Staffs.objects.get(admin=staff_id)
-        print( Asignacion.student_id.__str__)
-        for student.admin.id in Asignacion.student_id :
-            print("xD")
+        staff = Staffs.objects.get(admin=staff_id)     
         try:
             
             asignacion = Asignacion(student_id=student, staff_id=staff)  
